@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- added title -->
+    <title>Javascript Classes Assignment-10.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // created class rectangle with given parameters
+            class Rectangle {
+                constructor(length,breadth) {                   //constructor with arguments
+                    this.length = length;
+                    this.breadth = breadth;
+                    this.calculateArea = function() {           //method which returns area
+                        return this.length * this.breadth;
+                    }
+                }
+            }
+            rect1 = new Rectangle (10,30);                     //new rectangle object 
+            console.log("Area = " + rect1.calculateArea());
+    </script>
+</head>
+<body>
+    <h1>Result can be seen in console</h1>
+</body>
+</html>
